@@ -1,0 +1,18 @@
+<div class="card animated fadeIn" >
+    <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+    <div class="card-body">
+      <h5 class="card-title">{{ heroe.nombre }}</h5>
+      <p class="card-text">{{ heroe.bio }}</p>
+      <p class="card-text"><small class="text-muted">Primera paracion en: {{ heroe.aparicion }}</small></p>
+
+      <!-- Programacion pura de javascript -->
+      <button (click)="verHeroe()"
+        type="button" class="btn btn-outline-primary btn-block">
+          ver mas...
+      </button>
+
+      <!-- Utilizamos una ruta  -->
+      <!-- <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary btn-block">Ver mas link...</a> -->
+
+    </div>
+  </div>
